@@ -1,4 +1,4 @@
 XBeeRest
 ========
 
-Make a REST API server using MongoDB and NodeJS to store and provide XBee readings over the LAN 
+Make a REST API server using python's REST architecture to provide the readings to the LAN
