@@ -33,6 +33,6 @@ def update():
 	frame = request.json
 	db[frame['source_addr_long']] = frame['samples']
 	print db
-	return jsonify(db)
+	return jsonify({})
 
 app.run(debug=True)
