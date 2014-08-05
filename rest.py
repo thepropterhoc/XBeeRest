@@ -19,9 +19,8 @@ def get_val(self, val_id):
 	return jsonify(self.val)
 
 @app.route('/api/all/', methods = ['GET'])
-def get_all(self):
-	print vals
-	return jsonify({'vals' : vals})
+def get_all():
+	return jsonify({'db' : db})
 
 @app.route('/api/alerts/', methods = ['GET'])
 def get_alerts(self):
@@ -35,4 +34,4 @@ def update():
 	print db
 	return jsonify({})
 
-app.run(debug=True)
+app.run(host='0.0.0.0', port=80, debug=True)
